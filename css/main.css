@@ -1,0 +1,18 @@
+.top {
+  line-height: 26px;
+  padding: 10px 60px;
+  text-align: center;
+  background-color: #388ddc; }
+  .top a {
+    color: #000; }
+
+.course {
+  padding: 10px 60px; }
+  .course .course__top {
+    line-height: 16px; }
+  .course .course__detail .course__detail__video {
+    display: inline-block; }
+  .course .course__detail .course__detail__info {
+    display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

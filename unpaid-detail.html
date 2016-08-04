@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>课程详情</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="top">
-        <span>选择课程</span>
+        <span class="pull-left">选择课程</span>
         <span>火火直播</span>
-        <span>登录/注册</span>
+        <span class="pull-right"><a href="">登录</a>/<a href="">注册</a></span>
     </header>
     <div class="course">
         <div class="course__top">
             <span>首页 > 选择课程 > <span>初一数学: 全等三角形系列精讲</span></span>
         </div>
         <div class="course__detail">
-            <div>
+            <div class="course__detail__video">
                 <video src=""></video><!-- Course Video -->
             </div>
             <div class="course__detail__info">
@@ -29,10 +30,10 @@
                     <p>主讲老师<span class="course--teacher"></span></p>
                     <p>适合对象<span class="course--userOriented"></span></p>
                 </div>
-            </div>
-            <div class="course__join">
-                <button>报名 <span>￥10</span> </button>
-                <button> <span>正在直播..</span>进入直播间 </button>
+                <div class="course__join">
+                    <button class="btn btn-primary">报名 <span>￥10</span> </button>
+                    <button class='btn btn-primary'> <span>正在直播..</span>进入直播间 </button>
+                </div>
             </div>
         </div>
     </div>
