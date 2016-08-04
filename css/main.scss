@@ -1,6 +1,10 @@
+@mixin common-padding {
+	padding: 10px 60px;
+}
+
 .top {
 	line-height: 26px;
-	padding: 10px 60px;
+	@include common-padding;
 	text-align: center;
 	background-color: #388ddc;
 	a {
@@ -9,10 +13,12 @@
 }
 
 .course {
-	padding: 10px 60px;
+	@include common-padding;
+	background-color: #5fd930;
 
 	.course__top {
 		line-height: 16px;
+		padding-bottom: 10px;
 	}
 	
 	.course__detail {
@@ -24,8 +30,32 @@
 		.course__detail__info {
 			display: inline-block;
 			.course__join {
-				
+
 			}
 		}
 	}
+}
+
+.course__tab {
+	@include common-padding;
+
+	.spark-tabs {
+		margin: 0;
+		overflow: hidden;
+		list-style: none;
+		li {
+			padding: 10px 20px;
+			float: left;
+			&.active {
+				border-bottom: 4px solid #03f849;
+			}
+			a:visited,a:hover,a:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#detail {
+	
 }

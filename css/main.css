@@ -7,12 +7,28 @@
     color: #000; }
 
 .course {
-  padding: 10px 60px; }
+  padding: 10px 60px;
+  background-color: #5fd930; }
   .course .course__top {
-    line-height: 16px; }
+    line-height: 16px;
+    padding-bottom: 10px; }
   .course .course__detail .course__detail__video {
     display: inline-block; }
   .course .course__detail .course__detail__info {
     display: inline-block; }
+
+.course__tab {
+  padding: 10px 60px; }
+  .course__tab .spark-tabs {
+    margin: 0;
+    overflow: hidden;
+    list-style: none; }
+    .course__tab .spark-tabs li {
+      padding: 10px 20px;
+      float: left; }
+      .course__tab .spark-tabs li.active {
+        border-bottom: 4px solid #03f849; }
+      .course__tab .spark-tabs li a:visited, .course__tab .spark-tabs li a:hover, .course__tab .spark-tabs li a:focus {
+        text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
