@@ -59,9 +59,9 @@
                         </div>
                         <div class="panel-body">
                             <div class="col-md-3">
-                                <div class="panel panel-spark">
+                                <div class="panel panel-spark service-item">
                                     <div class="panel-heading">
-                                        <h4>课前服务</h4>
+                                        <h4 class="text-center">课前服务</h4>
                                     </div>
                                     <div class="panel-body">
                                         <ul>
@@ -75,9 +75,9 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="panel">
+                                <div class="panel panel-spark service-item">
                                     <div class="panel-heading">
-                                        <h4>课前服务</h4>
+                                        <h4 class="text-center">课前服务</h4>
                                     </div>
                                     <div class="panel-body">
                                         <ul>
@@ -91,9 +91,9 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="panel">
+                                <div class="panel panel-spark service-item">
                                     <div class="panel-heading">
-                                        <h4>课前服务</h4>
+                                        <h4 class="text-center">课前服务</h4>
                                     </div>
                                     <div class="panel-body">
                                         <ul>
@@ -102,14 +102,18 @@
                                             <li>讲义下载</li>
                                             <li>预习任务</li>
                                             <li>敬请期待...</li>
+                                            <li>讲义下载</li>
+                                            <li>预习任务</li>
+                                            <li>敬请期待...</li>
+
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="panel">
+                                <div class="panel panel-spark service-item">
                                     <div class="panel-heading">
-                                        <h4>课前服务</h4>
+                                        <h4 class="text-center">课前服务</h4>
                                     </div>
                                     <div class="panel-body">
                                         <ul>
@@ -129,7 +133,7 @@
                 <!-- 适用对象 培养目标 -->
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="panel">
+                        <div class="panel panel-spark oriented-user">
                             <div class="panel-heading">
                                 <h4>适应对象</h4>
                             </div>
@@ -143,7 +147,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="panel">
+                        <div class="panel panel-spark target">
                             <div class="panel-heading">
                                 <h4>培养目标</h4>
                             </div>
@@ -160,7 +164,7 @@
 
                 <!-- 课程简介 -->
                 <div class="row">
-                    <div class="panel">
+                    <div class="panel panel-spark">
                         <div class="panel-heading">课程简介</div>
                         <div class="panel-body">
                             <img src="" alt="课程简介">
@@ -177,30 +181,32 @@
 
             <!-- 课程表 -->
             <div class="tab-pane" id="schedule">
-                <div class="panel">
+                <div class="panel panel-spark">
                     <div class="panel-heading">
                         <h4>预约:预约是免费功能，请放心使用</h4>
-                        <span></span>
-                        <span></span>
+                        <span class="icon"></span>
+                        <span class="icon"></span>
                     </div>
                     <div class="panel-body">
                         <div class="schedule__endedLive">
+                            <h6>已直播过的课程</h6>
                             <ul>
                                 <li>
                                     有理数的必考概念
-                                    <span>观看回话</span>
+                                    <a class="pull-right">观看回话</a>
                                 </li>
                                 <li>
                                     有理数的四则运算
-                                    <span>观看回话</span>
+                                    <!-- <a class="pull-right">观看回话</a> -->
                                 </li>
                             </ul>
                         </div>
                         <div class="schedule__toLive">
+                            <h6>近期直播课程</h6>
                             <ul>
                                 <li>
                                     有理数的必考概念
-                                    <span>正在直播</span><span>试听</span>
+                                    <span class="pull-right">正在直播..<span>试听</span></span>
                                 </li>
                                 <li>
                                     整式的基本概念
@@ -225,44 +231,176 @@
             <div class="tab-pane" id="related">
                 <div class="row">
                     <!-- 直播 -->
-                    <div class="panel">
+                    <div class="panel panel-spark">
                         <div class="panel-heading">
                             <h4>曾老师的直播课</h4>
                         </div>
                         <div class="panel-body">
                             <div class="related__list">
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-                            <span>查看全部</span>
+                            <a class="related__viewMore">查看全部</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 回放 -->
                 <div class="row">
-                    <div class="panel">
+                    <div class="panel panel-spark">
                         <div class="panel-heading">
-                            <h4>曾老师的直播课</h4>
+                            <h4>曾老师的回放课</h4>
                         </div>
                         <div class="panel-body">
                             <div class="related__list">
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:圆的综合专题提升</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="related--live">
+                                            <div class="course--roomInfo">
+                                                <span>人数</span><span>256</span>
+                                                <span class='status pull-right'>正在直播</span>
+                                            </div>
+                                            <div class="related--briefInfo">
+                                                <h4>初三数学:实验作图</h4>
+                                                <p>曾老师</p>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-                            <span>查看全部</span>
+                            <a class="related__viewMore">查看全部</a>
                         </div>
                     </div>
                 </div>

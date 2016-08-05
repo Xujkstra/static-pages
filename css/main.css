@@ -1,3 +1,10 @@
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
 .top {
   line-height: 26px;
   padding: 10px 60px;
@@ -20,7 +27,7 @@
 .course__tab {
   padding: 10px 60px; }
   .course__tab .spark-tabs {
-    margin: 0;
+    margin-bottom: 20px;
     overflow: hidden;
     list-style: none; }
     .course__tab .spark-tabs li {
@@ -30,5 +37,83 @@
         border-bottom: 4px solid #03f849; }
       .course__tab .spark-tabs li a:visited, .course__tab .spark-tabs li a:hover, .course__tab .spark-tabs li a:focus {
         text-decoration: none; }
+
+.panel-spark {
+  border: 1px solid #ddd; }
+
+.panel-heading {
+  border-bottom: 1px solid #ddd; }
+
+#detail .course__detail--service li {
+  float: left;
+  width: 48%;
+  padding: 10px;
+  background-color: #ddd;
+  margin: 2% 1%; }
+#detail .service-item {
+  background-color: #f1f1f1; }
+#detail .oriented-user li,
+#detail .target li {
+  list-style: inside; }
+
+#schedule .schedule__endedLive li {
+  position: relative;
+  padding-left: 40px;
+  margin: 20px 0;
+  line-height: 20px; }
+  #schedule .schedule__endedLive li:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px; }
+#schedule .schedule__toLive li {
+  position: relative;
+  padding-left: 40px;
+  margin: 20px 0;
+  line-height: 20px; }
+  #schedule .schedule__toLive li:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px; }
+
+.related--live {
+  border-radius: 4px; }
+  .related--live .course--roomInfo {
+    line-height: 20px;
+    padding: 10px;
+    padding-bottom: 30px; }
+  .related--live .related--briefInfo {
+    padding: 30px 10px;
+    text-align: center; }
+    .related--live .related--briefInfo h4 {
+      display: inline-block;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px; }
+
+#related .related__list ul {
+  overflow: hidden; }
+  #related .related__list ul li {
+    border-radius: 5px;
+    margin: 20px 0;
+    float: left;
+    width: 30%;
+    color: #ddd;
+    background-color: #000; }
+  #related .related__list ul li:nth-child(3n+2) {
+    margin: 20px 5%; }
+#related .related__viewMore {
+  display: block;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

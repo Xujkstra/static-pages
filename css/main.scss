@@ -2,6 +2,15 @@
 	padding: 10px 60px;
 }
 
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 .top {
 	line-height: 26px;
 	@include common-padding;
@@ -40,7 +49,7 @@
 	@include common-padding;
 
 	.spark-tabs {
-		margin: 0;
+		margin-bottom: 20px;
 		overflow: hidden;
 		list-style: none;
 		li {
@@ -56,6 +65,124 @@
 	}
 }
 
+.panel-spark {
+		border: 1px solid #ddd;
+}
+.panel-heading {
+		border-bottom: 1px solid #ddd;
+}
+
 #detail {
-	
+		
+	.course__detail--service li {
+		float: left;
+		width: 48%;
+		padding: 10px;
+		background-color: #ddd;
+		margin: 2% 1%;
+	}
+	.service-item {
+		background-color: #f1f1f1;
+	}
+	.oriented-user,
+	.target {
+		li {
+			list-style: inside;
+		}
+	}
+}
+
+// @mixin circle {
+// 	content: '';
+// 	display: block;
+// 	width: 20px;
+// 	height: 20px;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	border: 1px solid #ddd;
+// 	border-radius: 10px;
+// }
+
+@mixin circle {
+	li {
+			position: relative;
+			padding-left: 40px;
+			margin: 20px 0;
+			line-height: 20px;
+			&:before {
+				content: '';
+				display: block;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+			}
+		}
+}
+#schedule {
+	.schedule__endedLive {
+		// li {
+		// 	position: relative;
+		// 	padding-left: 40px;
+		// 	margin: 20px 0;
+		// 	line-height: 20px;
+
+		// 	&:before {
+		// 		@include circle
+		// 	}
+		// }
+		@include circle
+	}
+	.schedule__toLive {
+		@include circle
+	}
+}
+
+.related--live  {
+	border-radius: 4px;
+	.course--roomInfo {
+		line-height: 20px;
+		padding: 10px;
+		padding-bottom: 30px;
+		.status {
+
+		}
+	}
+	.related--briefInfo {
+		padding: 30px 10px;
+		text-align: center;
+		h4 {
+			display: inline-block;
+			border-bottom: 1px solid #ddd;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#related {
+	.related__list {
+		ul {
+			overflow: hidden;
+			
+			li {
+				border-radius: 5px;
+				margin: 20px 0;
+				float: left;
+				width: 30%;
+				color: #ddd;
+				background-color: #000;
+			}
+			li:nth-child(3n+2) {
+				margin: 20px 5%;
+			}
+		}
+	}
+	.related__viewMore {
+		display: block;
+		text-align: center;
+	}
 }
